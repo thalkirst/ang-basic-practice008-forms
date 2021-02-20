@@ -1,0 +1,48 @@
+{
+  "list": [
+    {
+      "id": 0,
+      "name": "",
+      "date": "",
+      "time": "",
+      "location": {
+        "address": "",
+        "city": "",
+        "country": ""
+      }
+    },
+    {
+      "id": 1,
+      "name": "NG-NL Event",
+      "date": "12/10/2037",
+      "time": "12am",
+      "location": {
+        "address": "127 DT 123",
+        "city": "Amsterdam",
+        "country": "NETHERLANDS"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Angular Connect Event",
+      "date": "12/12/2022",
+      "time": "11am",
+      "location": {
+        "address": "1 Rockefeller Plaza Building D",
+        "city": "New York City",
+        "country": "UNITED STATES OF AMERICA"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Examination",
+      "date": "03/03/2021",
+      "time": "05pm",
+      "location": {
+        "address": "Boszorkány u. 2.",
+        "city": "Pécs City",
+        "country": "HUNGARY"
+      }
+    }
+  ]
+}
