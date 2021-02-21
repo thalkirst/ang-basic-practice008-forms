@@ -19,23 +19,24 @@ export class EventService {
   getAll(): void {
     this.list$.next([]);
     this.http.get<Event[]>(this.apiUrl).subscribe(
-      products => this.list$.next(products)
+      events => this.list$.next(events)
     );
   }
 
-  get(id: number | string): Observable<Event> {
-    id = parseInt(('' + id), 10);
-    return this.http.get<Event>(`${this.apiUrl}/${id}`);
+  get(id: number): Observable<Event> {
+    return Number(id) === 0 ? of(new Event()) : this.http.get<Event>(`${this.apiUrl}/${Number(id)}`);
   }
+
+
 
   update(event: Event): Observable<Event> {
     return this.http.patch<Event>(
       `${this.apiUrl}/${event.id}`,
       event
     ).pipe(
-      tap( () => {
+      tap(() => {
         this.getAll();
-        this.toastr.info('The event has been updated.', 'UPDATED'); 
+        this.toastr.info('The event has been updated.', 'UPDATED');
       })
     );
   }

@@ -1,19 +1,8 @@
 {
   "list": [
     {
-      "id": 0,
-      "name": "",
-      "date": "",
-      "time": "",
-      "location": {
-        "address": "",
-        "city": "",
-        "country": ""
-      }
-    },
-    {
       "id": 1,
-      "name": "NG-NL Event",
+      "name": "ng-nl Event in Holland",
       "date": "12/10/2037",
       "time": "12am",
       "location": {
@@ -35,7 +24,7 @@
     },
     {
       "id": 3,
-      "name": "Examination",
+      "name": "Examination (online)",
       "date": "03/03/2021",
       "time": "05pm",
       "location": {
